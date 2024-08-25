@@ -19,7 +19,9 @@ export const Main = () => {
 
   useEffect(() => {
     const getList = async () => {
-      const list = await axios.get("http://localhost:5000/list");
+      const list = await axios.get(
+        "https://probit-global-auto-trade-app.onrender.com/list"
+      );
       const newList = list.data.data.filter((coin) => {
         const name = String(coin.last);
         const len = name.length;
@@ -33,7 +35,9 @@ export const Main = () => {
     setInterval(getList, 30000);
     const getuserData = async () => {
       const id = location.state.id;
-      const url = "http://localhost:5000/getdata/" + String(id);
+      const url =
+        "https://probit-global-auto-trade-app.onrender.com/getdata/" +
+        String(id);
       const getData = await axios.post(url, id);
       const balance = await cryptoData(getData.data);
       setBalance(balance);

@@ -11,7 +11,7 @@ export const Login = () => {
     const userdata = Object.fromEntries(formData);
     e.currentTarget.reset();
     const res = await LoginValidation(userdata);
-    if (res.data.message == "success") {
+    if (res.data.message === "success") {
       navigate("/main", { state: { id: res.data.id, name: res.data.name } });
     } else {
       setError(res.data.message);
@@ -21,7 +21,7 @@ export const Login = () => {
     <div className=" text-center pt-5 bg-info" style={{ height: "100vh" }}>
       <form
         onSubmit={handleSubmit}
-        className="  container  border border-black rounded-2 bg-white  w-25   p-5">
+        className="  container  border border-black rounded-2 bg-white w-25 p-5">
         <div className="row  mb-3">
           <h3>Login Here</h3>
         </div>

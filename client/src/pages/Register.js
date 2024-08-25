@@ -13,7 +13,7 @@ export const Register = () => {
     const userdata = Object.fromEntries(formData);
     e.currentTarget.reset();
     const res = await RegisterValidation(userdata);
-    if (res.data.message == "success") {
+    if (res.data.message === "success") {
       navigate("/main", { state: { id: res.data.id } });
     } else {
       setError(res.data.message);
