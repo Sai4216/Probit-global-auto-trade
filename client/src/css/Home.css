@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.btn {
+  color: white;
+  background-color: #4853e8;
+  border-radius: 3px;
+  /* font-size: 1rem; */
+  padding: 5px;
+  text-decoration: none;
+  margin: 10px;
+  border-color: white;
+  border-width: 0px;
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  background-color: lightgray;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.heading {
+  color: black;
+  width: 30%;
+  float: left;
+  line-height: 100px;
+  height: 100px;
+}
+#btncontainer {
+  height: 100px;
+  /* width: 70%; */
+  text-align: right;
+  float: right;
+  /* border: 2px solid red; */
+  line-height: 100px;
+  margin-right: 100px;
+}
