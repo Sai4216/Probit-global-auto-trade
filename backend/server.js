@@ -13,9 +13,4 @@ app.use("/", require("./Routers/root"));
 app.get("*", (req, res) => {
   res.end("no page");
 });
-mongoose.connection.once("open", () => {
-  console.log("database is connected");
-  app.listen(5000, () => {
-    console.log("server is started at port 5000");
-  });
-});
+
