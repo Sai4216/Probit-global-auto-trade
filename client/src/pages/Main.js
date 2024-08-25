@@ -44,7 +44,7 @@ export const Main = () => {
       setLoading(false);
     };
     getuserData();
-    // getList();
+    getList();
   }, []);
   if (isLoading) {
     return <h4>Loading</h4>;
