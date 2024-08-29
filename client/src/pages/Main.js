@@ -84,7 +84,7 @@ export const Main = () => {
                   <div className="col-3">
                     <h5>{market_id}</h5>
                     <h5>Low: {low}</h5>
-                    <h5>Hogh: {high}</h5>
+                    <h5>High: {high}</h5>
                   </div>
                   <h5 className="col-4">volume: {quote_volume}</h5>
                   <h5 className="col-3">Current: {last}</h5>
